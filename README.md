@@ -23,8 +23,9 @@ You can download the latest builds:
 [ [Latest Stable Version](https://github.com/Panakotta00/FicsIt-Networks/releases/latest) ] 
 [ [Development Versions](https://github.com/Panakotta00/FicsIt-Networks/actions?query=branch%3Adevelopment) ]
 
-To install it, simply download the `FicsItNetworks-Windows.zip` artifact and extract the contents of it into the `<sf installation>/FactoryGame/Mods/FicsItNetworks` folder.
+To install it, simply download the `FicsItNetworks-Windows.zip` artifact and extract the contents of it into the `<sf installation>/FactoryGame/Mods/GameFeatures/FicsItNetworks` folder.
 It has to be this exact path and folder name! Extract it in a way, so the `.uplugin`-File is located within this folder.
+(Since Satisfactory 1.2 mods are Game Feature plugins and live under `Mods/GameFeatures`. Remove any old copy from `Mods/FicsItNetworks`, otherwise the game finds the mod twice.)
 
 ## Features
 
@@ -47,7 +48,7 @@ Lua is a first-class-citizen and is used to programm in-game computers. The refl
 
 ## Build from Scratch
 1. Setup the Mod-Development Environment for Satisfactory Modding. More info can be found in the [SMR Docs](https://docs.ficsit.app/satisfactory-modding/latest/Development/BeginnersGuide/index.html).
-2. Now you have to clone this repository **recursively** into the Mods folder of the [Satisfactory Modloader](https://github.com/satisfactorymodding/SatisfactoryModLoader) repository folder you cloned in the setup process.
+2. Now you have to clone this repository **recursively** into the `Mods/GameFeatures` folder (as `Mods/GameFeatures/FicsItNetworks`) of the [Satisfactory Modloader](https://github.com/satisfactorymodding/SatisfactoryModLoader) repository folder you cloned in the setup process.
 3. Apply the `SML_Patch.patch` file using `git apply` to the Satisfactory Modloader Repository folder. This will add simple changes to the header files that are necessary for FicsIt-Networks to build properly.
 4. Now you can build FicsIt-Networks like any other Satisfactory Mod using your build tool of choice or Alpakit.
 

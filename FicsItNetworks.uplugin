@@ -101,6 +101,6 @@
 			"ConfigGenerationPolicy": "Never"
 		}
 	],
-	"GameVersion": ">=502094",
+	"GameVersion": ">=513885",
 	"BuiltInInitialFeatureState": "Active"
 }

@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: satisfactorymodding/SatisfactoryModLoader
-          ref: 801e40c322e39eb93f0b06501c9e0df6ef14f3ee
+          ref: 8eebc9e659f0b2ff4392d2f8cf6e2cff60c8ea49 # SML master: headers for game CL513885 (1.2.4.1)
           path: SML
 
       - uses: actions/checkout@v4
